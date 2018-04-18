@@ -1,0 +1,34 @@
+import { Injectable } from '@angular/core';                                                 
+import { AngularFireDatabase  } from 'angularfire2/database';                       //this isnt js, its ts.
+import { Router } from '@angular/router';
+import { Observable } from 'rxjs/Observable';
+import { AngularFireAuth } from 'angularfire2/auth';
+import * as firebase from 'firebase/app';
+@Injectable()
+export class AuthService {
+  username: string;
+  user:any ;
+  va: boolean;
+  constructor(public af: AngularFireAuth) {
+    af.authState.subscribe(res => {
+      if (res && res.uid) {
+        this.va = true;
+      } else {
+        this.va = false;
+      }
+    });
+  }
+  function login() {
+    this.af.auth.signInWithPopup(new firebase.auth.GoogleAuthProvider()).then(function(result) {
+      // The firebase.User instance:
+      this.username = result.user.displayName;
+      this.user= result.user;
+    }
+    );
+  }
+ function logout() {
+    this.af.auth.signOut();
+  }
+
+
+}

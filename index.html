@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Devsign</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Gugi">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <style type="text/css" media="screen">
+    #Designer {
+        position: absolute;
+        top: 8%;
+        left: 0;
+    }
+    body {
+      background-color: #cfd8dc;
+
+    }
+     #Developer {
+        position: absolute;
+         right: 0;
+        bottom: 0;
+    }
+   
+    
+    </style>
+  </head>
+  <body>
+    <div class="row">
+      <div class="col s12 na">
+    <p align="center" style="font-family: 'Gugi'; margin-top: 0%; ceror: black;">Platform for Designers and Developers to work on same HTML/JS codebase remotely without any conflicts</p>
+    </div>
+    <div class="row col s12" style="position: absolute;
+        top: 2%; " >
+      <div class="col s1">
+        <p>HTML <i class="material-icons">arrow_upward</i></p> 
+      </div>
+      <div class="col s10">
+        <p align="center">Share the link, or open in muliple tabs/windows and start editing to see the marvel of truly server-less application</p>
+      </div>
+      <div class="col s1">
+        <p> Javascript <i class="material-icons">arrow_downward</i>    </p>
+      </div>
+    </div>
+  </div>
+    <div style="width: 100%; height: 45%;" id="Designer"></div>
+    
+    <div style="width: 100%; height: 46%;" id="Developer"></div>
+
+    <script src="../bower_components/yjs/y.es6"></script>
+    <script src="../bower_components/ace-builds/src-min-noconflict/ace.js"></script>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
