@@ -1,8 +1,8 @@
 {
-  "name": "examples",
+  "name": "Devsign",
   "version": "1.0.0",
-  "description": "",
-  "author": "Kevin Jahns",
+  "description": "Real-time collaborative web application building platform, that can be used to edit html and Javascript code simultaneously by multiple developers",
+  "author": "Prashant Raghu",
   "license": "MIT",
   "dependencies": {
     "monaco-editor": "^0.8.3"
